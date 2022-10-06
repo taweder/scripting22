@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*fonts go first in css file*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap');
+
+
+/*Apply the fonts*/
+h1, h2{
+	font-family: 'Fredoka One', cursive;
+}
+
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/****************************header area****************************/
+/*for the header - background colour, padding, center align text*/
+header{
+	background-color: #592026;
+	text-align: center;
+	/*padding shortcut works the same as margin - tb rl*/
+	padding:30px 0px;
+	color:white;
+}
+
+
+/****************************sections****************************/
+section{
+	/*all the default styles for all sections*/
+	background-color: #4A4D51;
+	max-width:1200px;
+	/*text color*/
+	color:white;
+	/*automatically centers element on page*/
+	margin:0 auto;
+	padding: 30px;
+	/*this will make the section the size of ALL of the contents, even those floating*/
+	overflow:hidden;
+}
+
+/*override with CLASS - more than one element to look the same but not ALL of the elements look that way*/
+.alternate{
+	background-color:#474041;
+}
+
+section img{
+	float:left;
+	/*push text off the images*/
+	margin-right:40px;
+}
+
+/*******************************footer*****************************/
+footer{
+	background-color: #592026;
+	/*white text, center the text, add padding*/
+	color: white;
+	text-align: center;
+	padding:50px;
+}
+
+/********************************styled links******************/
+
+/*default look of the link*/
+a:link{
+	color:pink;
+}
+
+/*previously been to the location of the link*/
+a:visited{
+	color:orange;
+}
+
+/*when I have my mouse OVER the element*/
+a:hover{
+	color:aquamarine;
+	/*get rid of the underline*/
+	text-decoration:none;
+}
+
+/*when you are pressing DOWN on the element*/
+a:active{
+	color:red;
+}
+
+
+/************************button styling*************************/
+
+button{
+	background-colour:#e7e7e7;
+	padding: 16px 32px;
+	font-size:16px;
+	/*change to a pointer finger*/
+	cursor:pointer;
+	/*default border - same colour as background*/
+	border:2px solid #e7e7e7;
+	/*add a transition to fade between the states*/
+	transition-duration: 0.6s;
+}
+
+button:hover{
+	background-color: #474041;
+	color:white;
+}
+
+
+/*******************************NavBar****************************/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background colour of the whole bar*/
+  background-color: #F12C30;
+}
+
+nav li {
+	/*put the list items side by each*/
+  float: left;
+}
+
+nav li a:link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	/*added duration for a fade*/
+	transition-duration: 0.6s;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: #630809;
+}
+
+
+/*make a CLASS that adds the stickiness to the navbar*/
+.sticky{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+
+
+
+
+
+
+
